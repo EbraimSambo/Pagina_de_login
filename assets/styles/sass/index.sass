@@ -1,21 +1,86 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    letter-spacing: .2rem
+    font-family: sans-serif
+    border: none
+    text-decoration: none
+    list-style-type: none
+
+html
+    font-size: 62.4%
 input
     width: 100%
     height: 100%
+
 #appContainer
+    padding: 4rem
     background: #1111
     height: 100vh
     width: 100%
+    display: flex
+    align-items: flex-end
+    justify-content: center
     .container
-        height: 100%
-        width: 100%
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        h100vh
         display: flex
         align-items: center
         justify-content: center
         form
-            width: 400px
-            border: 1px solid #111
-            padding: 2rem .9rem
+            background:#fff
+            border-radius: .7rem
+            max-width: 460px
+            width: 100%
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1)
+            padding: 2rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2rem
+            h1
+                font-size: 2.5rem
+                text-shadow: 1px 1px 1px #111
             .inputGroup
-                display: flex
+                width: 100%
+                &.duble
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                label
+                    font-size: 1.3rem
+                    font-weight: 700
                 input
+                    padding-left: 0.8rem
+                    border-radius: .3rem
+                    border: .1rem solid #aaa6a6
+                    margin: .5rem 0 0 0
                     height: 33px
+                    background: #d3d0d02a
+                button
+                    cursor: pointer
+                    color: #fff
+                    padding: .9rem 1.6rem
+                    font-weight: bold
+                    background: #5850ec
+                    box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1)
+                    &:hover
+                        background: #5850ecc2
+            a
+                font-size: 1.3rem
+        
+
+footer
+    ul
+        display: flex
+        gap: 1rem
+        li
+            margin-right: 0.7rem
+            a
+                font-size: 1.2rem
+                text-decoration: underline
