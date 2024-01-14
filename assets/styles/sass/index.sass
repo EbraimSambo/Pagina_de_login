@@ -15,6 +15,7 @@ input
     height: 100%
 
 #appContainer
+    position: relative
     padding: 4rem
     background: #1111
     height: 100vh
@@ -23,7 +24,7 @@ input
     align-items: flex-end
     justify-content: center
     .container
-        position: fixed
+        position: absolute
         top: 0
         right: 0
         left: 0
@@ -76,6 +77,7 @@ input
         
 
 footer
+    z-index: 40
     ul
         display: flex
         gap: 1rem

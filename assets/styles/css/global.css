@@ -19,6 +19,7 @@ input {
 }
 
 #appContainer {
+  position: relative;
   padding: 4rem;
   background: rgba(17, 17, 17, 0.0666666667);
   height: 100vh;
@@ -28,7 +29,7 @@ input {
   justify-content: center;
 }
 #appContainer .container {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -88,6 +89,9 @@ input {
   font-size: 1.3rem;
 }
 
+footer {
+  z-index: 40;
+}
 footer ul {
   display: flex;
   gap: 1rem;
